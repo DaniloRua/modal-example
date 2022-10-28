@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="style.css">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modal</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
 </head>
+
 <body>
-    <div class="container">
-        <button id="myBtn">Open Modal</button>
+  <div class="container">
+    <button id="myBtn" onclick="openModal()">Open Modal</button>
+  </div>
+
+  <div id="myModal" class="modal">
+
+
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p class="message">This content is not available</p>
     </div>
 
-<div id="myModal" class="modal">
 
-
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p class="message">You must be +18 to access this site</p>
   </div>
 
 
-</div>
+  <script>
+    const modal = document.querySelector('.modal');
+    const closeModal = document.querySelector('.close');
+    
+    function openModal() {
+      
+      modal.style.display = 'block';
+    }
+
+    closeModal.onclick = function (){
+      modal.style.display="none"
+    }
 
 
-<script>
 
-</script> 
+  </script>
 
 </body>
+
 </html>
