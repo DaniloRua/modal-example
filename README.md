@@ -5,5 +5,7 @@ You can use modals for spans, quick animate tutorials, displaying important mess
 
 ##take a look!
 
+https://danilorua.github.io/modal-example/
+
 
 
